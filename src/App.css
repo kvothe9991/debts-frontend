@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+.container {
+    background-color: white;
+    padding: 2rem;
+    width: 15rem;
+    height: 20rem;
+    border-radius: .4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrap {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.element {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.left {
+  display: flex;
+  align-items: flex-start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ball {
+  width: 1rem;
+  height: 1rem;
+  background-color: red;
+  border-radius: 50%;
+  margin-right: .5rem;
+  margin-top: .25rem;
+}
+
+.details { 
+  font-size: 0.8rem;
+}
+
+.completed * {
+  color: rgb(19, 191, 76);
+}
+
+.completed .ball {
+  background-color: rgb(19, 191, 76); ;
+}
+
+.bottom { 
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
