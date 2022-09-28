@@ -17,3 +17,7 @@ function getDebts() {
             'completed': false
         }]
 }
+
+// function get_debts() {
+//     fetch()
+// }
